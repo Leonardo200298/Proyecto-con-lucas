@@ -1,0 +1,11 @@
+{
+  "name": "futbol-total",
+  "version": "1.0.0",
+  "description": "Project college",
+  "main": "index.js",
+  "scripts": {
+    "start": "home.html"
+  },
+  "author": "Leonardo Sanchez",
+  "license": "ISC"
+}

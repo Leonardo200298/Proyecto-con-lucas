@@ -1,0 +1,32 @@
+
+@media only screen and (min-width: 660px)  {
+    *{
+        background-color: #e9f1ea;
+    }
+    .image-header{
+        width: 1350px;
+        height: 600px;
+    }
+    nav{
+        display: flex; 
+        justify-content:space-evenly;
+    }
+    table, td, tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .imagen-noticia{
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .noticias{
+        display: flex;
+        flex-direction: row;
+    }
+    .sub-noticia{
+        display: flex;
+        flex-direction: column;
+    }
+     
+}
