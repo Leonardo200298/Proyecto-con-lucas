@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <img class="image-header" src="./images/Futboltotal.png" alt="cabecera">
     </header>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="sobre-vos.html">Queremos saber más vos</a>
-        <a href="mercado-de-pases.html">Mercado de pases</a>
-        <a href="contactanos.html">Contactanos</a>
-    </nav>
+    <div class="logo">
+        <h1>Futbol total</h1>
+        <div class="btn_menu"><a>MENÚ</a></div>
+    </div>
+
+    <div class="menu">
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre-vos.html">Queremos saber más vos</a></li>
+            <li><a href="mercado-de-pases.html">Mercado de pases</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+    </div>
     <table>
         <thead>
             <tr>
@@ -29,16 +38,33 @@
         <tbody id="table">
 
         </tbody>
-        
+
     </table>
-    <input id="nombre" type="text" placeholder="Nombre">
-    <input id="apellido" type="text" placeholder="Apellido">
-    <input id="edad" type="number" placeholder="Edad">
-    <input id="equipo" type="text" placeholder="Equipo">
-    <button id="boton-agregar">Agregar</button>
-    <button id="boton-borrar">Borrar</button>
-    <button id="boton-agregar-x3">x3</button>
-    <button id="boton-vaciar-tabla">Vaciar tabla</button>
+    <form id="form">
+
+        <input name="nombre" type="text" placeholder="Nombre">
+        <input name="apellido" type="text" placeholder="Apellido">
+        <input name="edad" type="number" placeholder="Edad">
+        <input name="equipo" type="text" placeholder="Equipo">
+        <button id="boton-agregar">Agregar</button>
+        <button id="boton-borrar">Borrar</button>
+        <button id="boton-agregar-x3">x3</button>
+        <button id="boton-vaciar-tabla">Vaciar tabla</button>
+    </form>
+    <footer>
+        <h3>
+            Todos los derechos reservados. Futbol total.
+        </h3>
+        <p>
+            Instagram:@Futboltotal
+        </p>
+        <p>
+
+            Facebook:Futbol total
+        </p>
+    </footer>
     <script src="js/table.js"></script>
+    <script src="js/menuResponsive.js"></script>
 </body>
+
 </html>

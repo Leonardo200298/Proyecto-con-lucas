@@ -1,32 +1,150 @@
+*{
+    background-color: #a1ecab;
+}
+/* imagen de header */
+.image-header {
+    width: 640px;
+    height: 250px;
 
-@media only screen and (min-width: 660px)  {
-    *{
-        background-color: #e9f1ea;
+}
+
+/* Imagen de las noticias */
+.imagen-noticia {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/* Noticias */
+.noticias {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu responsive */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #84c88c;
+    color: rgb(16, 14, 14);
+}
+
+.btn_menu {
+    color: black;
+    padding: 15px;
+}
+
+.btn_menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu {
+    border-bottom: 4px solid #84c88c;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: rgb(8, 7, 7);
+}
+
+ul.navigation li:hover {
+    background-color: #84c88c;
+}
+/* pie */
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 100px;
+    border-top: 4px solid;
+    
+}
+@media only screen and (min-width: 660px) {
+    * {
+        background-color: #c1f5c7;
     }
-    .image-header{
+
+    .image-header {
         width: 1350px;
         height: 600px;
     }
-    nav{
-        display: flex; 
-        justify-content:space-evenly;
-    }
-    table, td, tr {
+
+    table,
+    td,
+    tr {
         border: 1px solid black;
         border-collapse: collapse;
     }
-    .imagen-noticia{
-        width: 600px;
-        height: 500px;
+
+    .imagen-noticia {
+        width: 500px;
+        height: 400px;
         border-radius: 10px;
     }
-    .noticias{
+
+    .noticias {
         display: flex;
         flex-direction: row;
     }
-    .sub-noticia{
+
+    .sub-noticia {
         display: flex;
         flex-direction: column;
     }
-     
+
+    .btn_menu {
+        display: none;
+    }
+
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        display: flex;
+
+        flex-direction: column;
+        width: 500px;
+    }
+
+    form input {
+        margin: 10px;
+    }
+    form button{
+        width: 100px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 200px;
+        border-top: 4px solid;
+        
+    }
 }
