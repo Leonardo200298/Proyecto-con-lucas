@@ -53,12 +53,12 @@ async function agregarUsuario(e) {
         })
         if (res.status == 201) {
             console.log("creado!");
+            cargarTabla();
         }
     }
     catch (error) {
         console.log(error);
     }
-    cargarTabla();
 }
 async function borrar(e) {
     e.preventDefault();  
@@ -69,6 +69,7 @@ async function borrar(e) {
         })
         if (res.status === 200) {
             console.log("Borrado");
+            cargarTabla();
         }
         else {
             console.log("Fila no encontrada");
@@ -77,7 +78,6 @@ async function borrar(e) {
     catch (error) {
         console.log(error);
     }
-    cargarTabla();
 }
 async function editar(e){
     e.preventDefault();
@@ -101,7 +101,8 @@ async function editar(e){
             'body': JSON.stringify(obj)
         });
         if (res.status === 200) {
-            console.log("Borrado");
+            console.log("Editado");
+            cargarTabla();
         }
         else {
             console.log("Fila no encontrada");
@@ -110,7 +111,7 @@ async function editar(e){
     catch (error) {
         console.log(error);
     }
-    cargarTabla();
+    
 }
 cargarTabla();
 

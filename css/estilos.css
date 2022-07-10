@@ -147,4 +147,9 @@ footer{
         border-top: 4px solid;
         
     }
+   
+    .passed{
+        color: green;
+    }
+   
 }

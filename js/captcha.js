@@ -16,10 +16,11 @@ function Verify(e) {
     let inputValue = Number(formData.get("inputValue"));
     let verify = document.querySelector("#verificated");
     if (inputValue === randomNumber) {
-        verify.classList.add('passed');
+        verify.classList.toggle('passed');
         verify.innerHTML = "Enviado!!";
         //resetea formulario
         formulario.reset();
+        captcha();
     }else {
         verify.innerHTML = "Captcha incorrecto";
     }
